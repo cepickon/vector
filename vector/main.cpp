@@ -12,4 +12,6 @@ int main(){
 	std::cout << "Element at index 2: " << ownV[2] << std::endl;
 	ownV.popBack();
 	ownV.print();
+	ownV.removeOnIndex(1);
+	ownV.print();
 }
