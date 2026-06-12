@@ -51,3 +51,11 @@ void OwnVector::print(){
 int OwnVector::operator[](int index){
     return mArray[index];
 }
+void OwnVector::removeOnIndex(int index){
+    if (index >= 0 && index < mSize){
+        for (int i = index; i < mSize - 1; i++){
+            mArray[i] = mArray[i + 1];
+        }
+        mSize--;
+    }
+}
