@@ -7,6 +7,7 @@ public:
 	void pushBack(int number);
 	void popBack();
 	void print();
+	void removeOnIndex(int index);
 	int operator[](int index);
 private:
 	int* mArray;
