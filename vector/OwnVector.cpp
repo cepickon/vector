@@ -59,3 +59,19 @@ void OwnVector::removeOnIndex(int index){
         mSize--;
     }
 }
+int OwnVector::front(){
+    if (mSize > 0){
+        return mArray[0];
+    }
+}
+int OwnVector::back(){
+    if (mSize > 0){
+        return mArray[mSize - 1];
+    }
+}
+void OwnVector::clear(){
+    mSize = 0;
+    mAllocatedSize = 0;
+    delete[] mArray;
+    mArray = nullptr;
+}
