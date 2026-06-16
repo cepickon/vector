@@ -51,6 +51,9 @@ void OwnVector::print(){
 int OwnVector::operator[](int index){
     return mArray[index];
 }
+int OwnVector::size(){
+    return mSize;
+}
 void OwnVector::removeOnIndex(int index){
     if (index >= 0 && index < mSize){
         for (int i = index; i < mSize - 1; i++){
